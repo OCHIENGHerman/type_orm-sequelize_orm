@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express';
 import "reflect-metadata";
 
+import testConnection  from './db';
 import AppDataSource from './data-source';
 
 const app = express();
@@ -11,6 +12,8 @@ app.use(express.json());
 app.get('/', (req: Request, res: Response) => {
   res.send('Server Running!');
 });
+
+testConnection();
 
 app.get('/test-connection', async (req: Request, res: Response) => {
   try {
