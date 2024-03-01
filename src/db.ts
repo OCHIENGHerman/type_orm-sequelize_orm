@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 
-const sequelize = new Sequelize("postgres://postgres:postgres@localhost:5432/seculize_orm");
+const sequelize = new Sequelize("postgres://herman_user:sPi1Y2ChuhntYH0hUBnrmF6ohAEvi1i4@dpg-cndq3mf79t8c738f0ehg-a.oregon-postgres.render.com:5432/herman");
 
 async function testConnection() {
     try {
